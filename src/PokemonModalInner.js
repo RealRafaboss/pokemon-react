@@ -18,6 +18,13 @@ export const PokemonModalInner = ({ abilities, pokemon, setOpenModal }) => {
         <div className="pokemonImg">
           {name}:
           <img alt={pokemon.name} src={imgSrc} />
+          <div className="weight">
+            Weight: {pokemon.weight}
+            
+          </div>
+          <div className="height">
+            Height: {pokemon.height}
+          </div>
         </div>
         {!showAbility ? (
           <div className="abilityName">
